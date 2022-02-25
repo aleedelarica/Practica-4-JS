@@ -4,35 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Fetch API Demo</title>
+    <title>TRIVIAL</title>
 </head>
 
-<body>
+<body class="bg-dark">
+
+<div class="container text-center">
+    <br>
+    <h1 class="display-3 fw-bolder text-white">TRIVIAL</h1>
+    <br>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <form>
+            <select id="difficulty" class="form-select">
+                <option selected value = "easy">Easy</option>
+                <option value = "medium">Medium</option>
+                <option value = "hard">Hard</option>
+            </select>
+            <br>
+            <select id="number" class="form-select">
+                <option selected value = "5">5 Questions</option>
+                <option value = "10">10 Questions</option>
+                <option value = "20">20 Questions</option>
+            </select>
+            <br>
+            <input type="button" onclick="return getQuestions()" value="Generate Questions"/>
+            <input type="button" onclick="window.location.reload()" value="Clear all"/>
+        </form>
+    </div>
+    <br>
+    <br>
+</div>
+
 <div class="container">
-<form>
-    <select id="difficulty" class="form-select">
-        <option selected value = "easy">Facil</option>
-        <option value = "medium">Normal</option>
-        <option value = "hard">Dificil</option>
-    </select>
-    <select id="number" class="form-select">
-        <option selected value = "5">5 Questions</option>
-        <option value = "10">10 Questions</option>
-        <option value = "20">20 Questions</option>
-    </select>
-    <input type="button" onclick="return getQuestions()" value="Generate Questions"/>
-    <input type="button" onclick="window.location.reload()" value="Clear all"/>
-</form>
-    <br>
-    <br>
-</div>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" id="c1">
 
-<div class="container" id="c1">
+    </div>
 
 </div>
 <br>
 <br>
-<div class="container" id="c2">
+<div class="container">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" id="c2">
+
+    </div>
 
 </div>
 
